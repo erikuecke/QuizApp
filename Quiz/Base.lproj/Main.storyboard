@@ -47,22 +47,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUu-q9-GQC">
+                                <rect key="frame" x="166.5" y="81" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vqe-mF-7zZ" firstAttribute="top" secondItem="TUS-BR-6KN" secondAttribute="bottom" constant="8" id="7Jc-BP-AKY"/>
                             <constraint firstItem="y1O-sY-DBE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BJh-1X-o0O"/>
-                            <constraint firstItem="y1O-sY-DBE" firstAttribute="centerX" secondItem="Dhg-kx-Tel" secondAttribute="centerX" id="Bxh-tH-JXS"/>
+                            <constraint firstItem="BUu-q9-GQC" firstAttribute="top" secondItem="y1O-sY-DBE" secondAttribute="top" id="EhM-Ow-No9"/>
                             <constraint firstItem="Vqe-mF-7zZ" firstAttribute="centerX" secondItem="Dhg-kx-Tel" secondAttribute="centerX" id="Z60-xx-gzH"/>
                             <constraint firstItem="TUS-BR-6KN" firstAttribute="top" secondItem="Dhg-kx-Tel" secondAttribute="bottom" constant="149" id="ZLB-cB-Ne8"/>
                             <constraint firstItem="Dhg-kx-Tel" firstAttribute="top" secondItem="y1O-sY-DBE" secondAttribute="bottom" constant="8" id="b3s-ae-LNM"/>
                             <constraint firstItem="TUS-BR-6KN" firstAttribute="centerX" secondItem="Dhg-kx-Tel" secondAttribute="centerX" id="bvX-cz-iKd"/>
+                            <constraint firstItem="BUu-q9-GQC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eXY-2A-ZoI"/>
                             <constraint firstItem="y1O-sY-DBE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="sZ7-Ge-FbP"/>
+                            <constraint firstItem="Dhg-kx-Tel" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tSA-L0-vrs"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="TUS-BR-6KN" id="Bgv-ew-yAn"/>
-                        <outlet property="questionLabel" destination="y1O-sY-DBE" id="wsR-oC-qd8"/>
+                        <outlet property="currentQuestionLabel" destination="y1O-sY-DBE" id="TSb-15-gg4"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="BJh-1X-o0O" id="dlQ-bH-EZt"/>
+                        <outlet property="nextQuestionLabel" destination="BUu-q9-GQC" id="GT4-B2-Fz9"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="eXY-2A-ZoI" id="UKy-mJ-YNq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
